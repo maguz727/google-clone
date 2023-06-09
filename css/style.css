@@ -52,8 +52,13 @@ body {
   font-size: 1.3rem;
 }
 
+.nav__item:hover {
+  text-decoration: underline;
+}
+
 .perfil-container {
   position: relative;
+  margin: 0 1rem;
 }
 
 .perfil {
@@ -99,6 +104,13 @@ body {
   align-items: center;
   border-radius: 3rem;
   margin: 2rem;
+  padding: 1rem;
+}
+
+.contenedor-buscador:hover {
+  background-color: #303134;
+  box-shadow: 0 1px 6px 0 #171717;
+  border-color: rgba(223,225,229,0);
 }
 
 .icon {
@@ -109,15 +121,17 @@ body {
 
 .buscador {
   height: 100%;
-  width: 70%;
+  width: 80%;
 }
 
 .buscar {
   resize: none;
-  background-color: var(--bg-dark);
+  background-color: transparent;
   border: none;
   height: 100%;
   width: 100%;
+  outline: none;
+  color: #e8eaed;
 }
 
 .mic-cam {
@@ -131,20 +145,28 @@ body {
 }
 
 .botones {
-  margin: 1rem 0 2rem 0;
+  display: flex;
+  gap: 1rem;
 }
 
 .boton {
   text-decoration: none;
   color: #e8eaed;
   background-color: var(--primary-btn);
-  padding: 1rem 1.6rem;
   border-radius: 0.4rem;
-  margin: 0.5rem;
   font-size: 1.4rem;
   line-height: 2.7rem;
-  height: 3.6rem;
   text-align: center;
+  display: flex;
+  height: 3.6rem;
+  width: 14.7rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.boton:hover {
+  border: 1px solid #5f6368;
 }
 
 .text {
